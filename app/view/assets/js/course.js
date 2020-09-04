@@ -52,12 +52,10 @@ $(document).ready(function(){
         }
     ];
 
-    setTimeout(() => {
-        $(".timeline").roadmap(myTimeline, {
+    $(".timeline").roadmap(myTimeline, {
         eventsPerSlide: 3,
         slide: 3,
         prevArrow:"<i class=\"material-icons timelineArrow\">keyboard_arrow_left</i>",
         nextArrow:"<i class=\"material-icons timelineArrow\">keyboard_arrow_right</i>"
-        });
-    }, 200);
+    });
 });

@@ -27,8 +27,9 @@
 <link rel="stylesheet" href="app/view/assets/css/termynal.css">
 <!-- Loading Termynal JavaScript -->
 <script>
-    // URL of the JavaScript file used for this page.
+    // URL of the JavaScript file used for this page or the site.
     urlTermynalJS = "app/view/assets/js/termynal.js";
+    urlTimelineJS = "app/view/assets/js/jquery.roadmap.min.js";
 
     // Loading the JavaScript file then initializing the terminal like display.
     $.getScript(urlTermynalJS, function() {
@@ -38,4 +39,5 @@
             lineDelay: 400
         });
     });
+    $.getScript(urlTimelineJS);
 </script>
