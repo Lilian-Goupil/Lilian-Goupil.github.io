@@ -1,0 +1,98 @@
+/* General CSS rules for the page */
+/* Making the page height and width 100%. Footer always at the bottom etc... */
+
+html {
+	height: 100vh;
+	width: 100vw;
+
+	overflow-x: hidden;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+
+	height: 100vh;
+}
+
+main {
+	flex: 1 0 auto;
+}
+
+
+
+/* Specific CSS rules for some elements */
+
+.sidenav-trigger :hover {
+	cursor: pointer;
+}
+
+.switch > label {
+	font-size: 1.2rem;
+}
+
+.mainContainer {
+	padding: 4%;
+}
+
+#home2 {
+	cursor: pointer;
+}
+
+/* Dark and Light Theme color options */
+
+.nav-wrapper.darkTheme {
+	background-color: #0a3c46;
+}
+
+.nav-wrapper.lightTheme {
+	background-color: #c8e6e6;
+}
+
+.sideNavTriggerContainer.darkTheme {
+	background-color: #0a3c46;
+}
+
+.sideNavTriggerContainer.lightTheme {
+	background-color: #c8e6e6;
+}
+
+.sidenav.darkTheme {
+	background-color: #0a3c46;
+}
+
+.sidenav.lightTheme {
+	background-color: #c8e6e6;
+}
+
+main.darkTheme {
+	background-color: #14465a;
+}
+
+main.lightTheme {
+	background-color: #dcfafa;
+}
+
+.mainContainer.darkTheme {
+	background-color: #14465a;
+}
+
+.mainContainer.lightTheme {
+	background-color: #dcfafa;
+}
+
+.page-footer.darkTheme {
+	background-color: #0a3c46;
+}
+
+.page-footer.lightTheme {
+	background-color: #c8e6e6;
+}
+
+.darkThemeText {
+	color: #ffffff !important;
+}
+
+.lightThemeText {
+	color: #000000 !important;
+}

@@ -1,0 +1,41 @@
+<div class="row">
+    <div class="col l12 m12 s12">
+        <div class="termynal">
+            <span data-ty="">Bienvenue sur mon site !</span>
+            <span data-ty=""></span>
+            <span data-ty="input">val data = [];</span>
+            <span data-ty="input">getData(data);</span>
+            <span data-ty=""></span>
+            <span data-ty="">Données récupéreés.</span>
+            <span data-ty=""></span>
+            <span data-ty="input">display(data);</span>
+            <span data-ty=""></span>
+            <span data-ty="">Traitement et affichage des données ...</span>
+            <span data-ty=""></span>
+            <span data-ty="">Bonjour, je m'appelle Lilian Goupil, je suis actuellement étudiant en développement informatique.</span>
+            <span data-ty="">Au cours des mes étdudes j'ai appris le développement web ainsi que le développement mobile.</span>
+            <span data-ty="">Titulaire d'un BTS Services Informatiques aux Organisations.</span>
+            <span data-ty="">Je cherche à continuer mes études dans le développement mobile.</span>
+            <span data-ty="">J'aimerais intégrer le marché du travail en tant que développeur mobile Android.</span>
+            <span data-ty="">Sur mon site vous pourrez retrouver tout mon parcours scolaire ainsi que professionnel.</span>
+            <span data-ty="">Je présente également de certains de mes projets personnels.</span>
+        </div>
+    </div>
+</div>
+
+<!-- Loading Termynal CSS -->
+<link rel="stylesheet" href="app/view/assets/css/termynal.css">
+<!-- Loading Termynal JavaScript -->
+<script>
+    // URL of the JavaScript file used for this page.
+    urlTermynalJS = "app/view/assets/js/termynal.js";
+
+    // Loading the JavaScript file then initializing the terminal like display.
+    $.getScript(urlTermynalJS, function() {
+        var termynal = new Termynal(".termynal", {
+            startDelay: 400,
+            typeDelay: 80,
+            lineDelay: 400
+        });
+    });
+</script>

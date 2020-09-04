@@ -1,0 +1,11 @@
+/* Dark and Light Theme color options */
+
+.collapsible-header.darkTheme {
+    background-color: #0a3c46;
+    border-color: #ffffff;
+}
+
+.collapsible-header.lightTheme {
+    background-color: #c8e6e6;
+    border-color: #ffffff;
+}
