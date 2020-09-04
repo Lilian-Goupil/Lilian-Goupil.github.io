@@ -54,7 +54,6 @@ $(document).ready(function(){
 });
 
 function checkAndApplyColorMode() {
-    console.log("In checkAndApplyColorMode()");
     let actualTheme;
     let actualTextTheme;
 
