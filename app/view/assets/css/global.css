@@ -19,8 +19,6 @@ main {
 	flex: 1 0 auto;
 }
 
-
-
 /* Specific CSS rules for some elements */
 
 .sidenav-trigger :hover {
@@ -37,6 +35,10 @@ main {
 
 #home2 {
 	cursor: pointer;
+}
+
+.hiddenText {
+	color: rgba(0, 0, 0, 0);
 }
 
 /* Dark and Light Theme color options */

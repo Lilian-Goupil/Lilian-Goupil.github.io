@@ -8,4 +8,6 @@ $(document).ready(function(){
             lineDelay: 400
         });
     });
+
+    $(".termynal").children().removeClass("hiddenText");
 });
