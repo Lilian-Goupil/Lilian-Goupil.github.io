@@ -1,28 +1,9 @@
 $(document).ready(function(){
-    var actualTheme;
-    var actualTextTheme;
+    checkAndApplyColorMode();
 
-    if($(".nav-wrapper").hasClass("darkTheme")) {
-        actualTheme = "darkTheme";
-        actualTextTheme = "darkThemeText";
+    $.getScript(urlTimelineJS);
 
-        $(".lightTheme").addClass("darkTheme");
-        $(".darkTheme").removeClass("lightTheme");
-
-        $(".lightThemeText").addClass("darkThemeText");
-        $(".darkThemeText").removeClass("lightThemeText");
-    } else {
-        actualTheme = "lightTheme";
-        actualTextTheme = "lightThemeText";
-
-        $(".darkTheme").addClass("lightTheme");
-        $(".lightTheme").removeClass("darkTheme");
-
-        $(".darkThemeText").addClass("lightThemeText");
-        $(".lightThemeText").removeClass("darkThemeText");
-    }
-
-    var myTimeline = [{
+    let myTimeline = [{
             date: "Septembre 2016",
             content: "Service Civique - Education Nationale"
         },{
@@ -52,10 +33,12 @@ $(document).ready(function(){
         }
     ];
 
-    $(".timeline").roadmap(myTimeline, {
-        eventsPerSlide: 3,
-        slide: 3,
-        prevArrow:"<i class=\"material-icons timelineArrow\">keyboard_arrow_left</i>",
-        nextArrow:"<i class=\"material-icons timelineArrow\">keyboard_arrow_right</i>"
-    });
+    setTimeout(function() {
+        $(".timeline").roadmap(myTimeline, {
+            eventsPerSlide: 3,
+            slide: 3,
+            prevArrow:"<i class=\"material-icons timelineArrow\">keyboard_arrow_left</i>",
+            nextArrow:"<i class=\"material-icons timelineArrow\">keyboard_arrow_right</i>"
+        });
+    }, 500);
 });
