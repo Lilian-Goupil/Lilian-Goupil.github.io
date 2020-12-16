@@ -26,10 +26,16 @@ $(document).ready(function(){
             content: "Stage 2ème année BTS SIO - Blizz Clermont-Ferrand"
         },{
             date: "Juillet 2020",
-            content: "Obtention du BTS SIO"
+            content: "Obtention du BTS SIO - Godefroy de Bouillon Clermont-Ferrand"
         }, {
-            date: "A venir ...",
-            content: ""
+            date: "Octobre 2020",
+            content: "Entrée en formation CDA - Human Booster Clermont-Ferrand"
+        }, {
+            date: "À venir...",
+            content: "Stage formation CDA - À venir..."
+        }, {
+            date: "À venir...",
+            content: "Fin de formation CDA - Human Booster Clermont-Ferrand"
         }
     ];
 
